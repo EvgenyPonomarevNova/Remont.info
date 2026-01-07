@@ -1,612 +1,607 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>МастерСтирка — профессиональная стирка для бизнеса</title>
 
-    <!-- Fonts: Lato + Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>МастерСтирка — профессиональная стирка для бизнеса</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Основные мета-теги -->
+  <meta name="description"
+    content="Профессиональная стирка для бизнеса в Москве: отели, фитнес-клубы, рестораны, медучреждения. Стирка от 60 ₽/кг с забором и доставкой.">
+  <meta name="keywords"
+    content="профессиональная стирка, прачечная для бизнеса, стирка для отелей, стирка постельного белья, прачечная Москва, стирка для ресторанов, прачечная для фитнес-клубов, стирка спецодежды">
+  <meta name="author" content="МастерСтирка">
 
-  <body class="page">
-    <!-- HEADER -->
-    <header class="header" id="top">
-      <div class="container header__inner">
-        <a class="header__brand" href="#top" aria-label="На главную">
-          <span class="header__logo" aria-hidden="true">
-            <img
-              class="header__logo-img"
-              src="./assets/icons/logo.svg"
-              alt=""
-            />
-          </span>
-          <span class="header__brand-text">
-            <span class="header__brand-title">МАСТЕР</span>
-            <span class="header__brand-title">СТИРКА</span>
-          </span>
-        </a>
+  <!-- Open Graph для соцсетей -->
+  <meta property="og:title" content="МастерСтирка — профессиональная стирка для бизнеса">
+  <meta property="og:description"
+    content="Стирка всех видов белья для отелей, фитнес-клубов, ресторанов и других организаций в Москве. Качество, деликатный уход, соблюдение сроков.">
+  <meta property="og:image" content="https://ваш-сайт.ru/assets/og-image.jpg">
+  <meta property="og:url" content="https://ваш-сайт.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
 
-        <nav class="header__nav" aria-label="Навигация">
-          <a class="header__link" href="#about">О нас</a>
-          <a class="header__link" href="#services">Услуги</a>
-          <a class="header__link" href="#process">Процесс</a>
-          <a class="header__link" href="#contacts">Контакты</a>
-        </nav>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="МастерСтирка — профессиональная стирка для бизнеса">
+  <meta name="twitter:description" content="Профессиональная стирка для бизнеса в Москве от 60 ₽/кг">
+  <meta name="twitter:image" content="https://ваш-сайт.ru/assets/twitter-image.jpg">
 
-        <a class="header__phone" href="tel:+79857389238" aria-label="Позвонить">
-          <span class="header__phone-icon" aria-hidden="true"
-            ><img src="./assets/icons/tel.svg" alt="телефон"
-          /></span>
-          <span class="header__phone-text">8 (985) 738-92-38</span>
-        </a>
-      </div>
-    </header>
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ваш-сайт.ru/">
 
-    <main class="main">
-      <!-- HERO -->
-      <section class="hero" id="services">
-        <div class="container hero__inner">
-          <div class="hero__content">
-            <h1 class="hero__title">
-              Качественная стирка<br />
-              <span class="hero__title-light"
-                >для отелей, фитнес-<br />клубов и др</span
-              >
-            </h1>
+  <!-- Язык и регион -->
+  <meta name="language" content="Russian">
+  <meta name="geo.region" content="RU-MOW">
+  <meta name="geo.placename" content="Moscow">
 
-            <p class="hero__desc">
-              Стирка всех видов белья для производства и организаций
-            </p>
+  <!-- Для поисковых систем -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-            <button
-              class="btn btn--primary hero__btn"
-              type="button"
-              data-modal-open="callback"
-            >
-              Заказать стирку
-            </button>
-          </div>
+  <!-- Schema.org микроразметка -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "МастерСтирка",
+  "description": "Профессиональная прачечная для бизнеса в Москве",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Москва",
+    "addressCountry": "RU"
+  },
+  "telephone": "+79857389238",
+  "priceRange": "от 60 ₽",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://ваш-сайт.ru/",
+  "serviceType": [
+    "Профессиональная стирка",
+    "Стирка для отелей",
+    "Стирка для ресторанов",
+    "Стирка для фитнес-клубов"
+  ]
+}
+</script>
 
-          <!-- картинка ВЫЛЕТАЕТ ВПРАВО за контейнер -->
-          <div class="hero__media media-bleed bleed-right" aria-hidden="true">
-            <img
-              class="media-bleed__img"
-              src="./assets/hero-placeholder.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+  <!-- Fonts: Lato + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet" />
 
-      <!-- ABOUT -->
-      <section class="about" id="about">
-        <div class="container about__inner">
-          <div class="about__content">
-            <h2 class="section-title about__title">О НАС</h2>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-            <p class="section-subtitle about__lead">
-              Экономьте время — доверьте стирку профессионалам. Мы гарантируем
-              высокое качество, деликатный уход и соблюдение сроков.
-            </p>
+<body class="page">
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="header__brand" href="#" aria-label="На главную">
+        <span class="header__logo" aria-hidden="true">
+          <img class="header__logo-img" src="./assets/icons/logo.svg" alt="" />
+        </span>
+        <span class="header__brand-text">
+          <span class="header__brand-title">МАСТЕР</span>
+          <span class="header__brand-title">СТИРКА</span>
+        </span>
+      </a>
 
-            <div class="about__line" aria-hidden="true"></div>
+      <nav class="header__nav" aria-label="Навигация">
+        <a class="header__link" href="#about">О нас</a>
+        <a class="header__link" href="#services">Услуги</a>
+        <a class="header__link" href="#process">Процесс</a>
+        <a class="header__link" href="#contacts">Контакты</a>
+      </nav>
 
-            <div class="about__text">
-              <p>
-                <span class="text-strong"
-                  >Добро пожаловать в прачечную МастерСтирка</span
-                >
-                — ваш надежный партнер в сфере профессиональной стирки в Москве.
-                Мы предоставляем полный комплекс услуг для гостиниц, общежитий,
-                воинских частей, производственных предприятий, детских и
-                медицинских учреждений, обеспечивая безупречное качество и
-                деликатный уход за текстилем.
-              </p>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-controls="mobile-menu"
+        aria-expanded="false">
+        <span class="header__burger-lines" aria-hidden="true"></span>
+      </button>
 
-              <p class="text-strong">
-                Принимается в стирку столовое и постельное белье, махровые
-                изделия, спецодежда.
-              </p>
-            </div>
-          </div>
-
-          <!-- картинка ВЫЛЕТАЕТ ВПРАВО за контейнер -->
-          <div class="about__media media-bleed bleed-right" aria-hidden="true">
-            <img
-              class="media-bleed__img"
-              src="./assets/about-placeholder.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICES -->
-      <section class="prices" id="prices">
-        <div class="container prices__inner">
-          <!-- картинка ВЫЛЕТАЕТ ВЛЕВО за контейнер -->
-          <div class="prices__media media-bleed bleed-left" aria-hidden="true">
-            <img
-              class="media-bleed__img"
-              src="./assets/prices-placeholder.svg"
-              alt=""
-            />
-          </div>
-
-          <div class="prices__content">
-            <h2 class="section-title prices__title">ЦЕНЫ</h2>
-            <div class="prices__subtitle">от 60 ₽ / кг</div>
-
-            <div class="prices__text">
-              <p class="prices__label text-strong">
-                В цену включены следующие услуги:
-              </p>
-              <ul class="prices__list">
-                <li class="prices__item">взвешивание и фасовка белья;</li>
-                <li class="prices__item">стирка белья;</li>
-                <li class="prices__item">сушка белья;</li>
-                <li class="prices__item">глажка и упаковка белья.</li>
-                <li class="prices__item">
-                  забор белья в обработку и возврат чистого
-                </li>
-              </ul>
-
-              <p>
-                При этом цены могут быть изменены в зависимости от категории
-                текстиля, его состояния, объема, а также вида заказываемых
-                услуг.
-              </p>
-
-              <p>
-                Прачечная «МастерСтирка» гарантирует сохранность, качество и
-                сроки стирки Вашего белья так как оно будет стираться на новом,
-                современном оборудовании и ответственным профессиональным
-                коллективом
-              </p>
-
-              <p>
-                Свяжитесь с нами прямо сейчас, чтобы обсудить условия
-                сотрудничества. МастерСтирка — ваш эксперт в сфере стирки для
-                бизнеса!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CLIENTS (внутри контейнера 1500px, без вылетов) -->
-      <section class="clients" id="clients">
-        <div class="container clients__inner">
-          <h2 class="section-title clients__title">НАШИ КЛИЕНТЫ</h2>
-
-          <div class="clients__grid">
-            <article class="client-card">
-              <div class="client-card__icon" aria-hidden="true">
-                <img src="assets/icons/icon-hotel1.svg" alt="" />
-              </div>
-              <div class="client-card__body">
-                <h3 class="card-title">Гостиницы и отели</h3>
-                <p class="card-text">
-                  Наши клиенты, представляющие гостиницы и отели, знают какие
-                  требования должны предъявляться к прачечным, готовы взять на
-                  себя обслуживание гостиничных комплексов с большим количеством
-                  постельного белья и формы.
-                </p>
-              </div>
-            </article>
-
-            <article class="client-card">
-              <div class="client-card__icon" aria-hidden="true">
-                <img src="assets/icons/icon-hotel4.svg" alt="" />
-              </div>
-              <div class="client-card__body">
-                <h3 class="card-title">Фитнес-клубы и бани</h3>
-                <p class="card-text">
-                  Для фитнес центров характерно, что основной объем, требующей
-                  стирки трикотажа, составляют махровые полотенца и халаты. Они
-                  требуют своей технологии стирки, т.к. при ее нарушении эти
-                  ткани грубеют.
-                </p>
-              </div>
-            </article>
-
-            <article class="client-card">
-              <div class="client-card__icon" aria-hidden="true">
-                <img src="assets/icons/icon-hotel2.svg" alt="" />
-              </div>
-              <div class="client-card__body">
-                <h3 class="card-title">Рестораны</h3>
-                <p class="card-text">
-                  Для любого ресторана чистота текстиля в зале — одна из
-                  ключевых составляющих его репутации. Специфика использования
-                  текстиля в работе такова что загрязнения приводят к быстрому
-                  загрязнению, потере респектабельного вида и частой стирке.
-                </p>
-              </div>
-            </article>
-
-            <article class="client-card">
-              <div class="client-card__icon" aria-hidden="true">
-                <img src="assets/icons/icon-hotel5.svg" alt="" />
-              </div>
-              <div class="client-card__body">
-                <h3 class="card-title">Медучреждения</h3>
-                <p class="card-text">
-                  В медицинских учреждениях, таких как стационары, требуется
-                  стирка одежды часто и практически без остановок. Это
-                  обусловлено спецификой учреждений. Необходимо стирать
-                  постельное белье, полотенца, халаты и т.п.
-                </p>
-              </div>
-            </article>
-
-            <article class="client-card client-card--wide">
-              <div class="client-card__icon" aria-hidden="true">
-                <img src="assets/icons/icon-hotel3.svg" alt="" />
-              </div>
-              <div class="client-card__body">
-                <h3 class="card-title">Производственные и иные организации</h3>
-                <p class="card-text">
-                  Процесс взаимодействия со всеми организациями одинаков и
-                  начинается он одинаково для всех. После того, как
-                  представитель организации свяжется с нашим менеджером
-                  (позвонит нам или перезвонит по поступившей заявке на обратный
-                  звонок) организации будет направлено индивидуальное
-                  коммерческое предложение с указанием цены, рассчитанной с
-                  учетом особенностей текстиля, подлежащего стирке, а также
-                  набора услуг, выбранных клиентом и согласованных сторонами.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ADVANTAGES -->
-      <section class="advantages" id="advantages">
-        <div class="container advantages__inner">
-          <h2 class="section-title2 advantages__title">НАШИ ПРЕИМУЩЕСТВА</h2>
-
-          <div class="advantages__grid">
-            <article class="adv-card">
-              <div class="adv-card__icon" aria-hidden="true">
-                <img src="assets/icons/Icon.svg" alt="" />
-              </div>
-              <div class="adv-card__body">
-                <h3 class="advantages__card-title">ТЕХНОЛОГИЧНОСТЬ</h3>
-                <p class="advantages__card-text">
-                  Обеспечивается современным промышленным оборудованием в
-                  достаточном количестве, позволяющем не смешивать потоки белья,
-                  системой автоматических дозаторов моющих средств и широким
-                  набором машинных программ для стирки любых видов трикотажа.
-                </p>
-              </div>
-            </article>
-
-            <article class="adv-card">
-              <div class="adv-card__icon" aria-hidden="true">
-                <img src="assets/icons/Icon2.svg" alt="" />
-              </div>
-              <div class="adv-card__body">
-                <h3 class="advantages__card-title">КАЧЕСТВО</h3>
-                <p class="advantages__card-text">
-                  Достигается современным оборудованием и квалифицированным
-                  персоналом, а также применением двойного контроля качества в
-                  процессе работы с текстилем.
-                </p>
-              </div>
-            </article>
-
-            <article class="adv-card" id="ht">
-              <div class="adv-card__icon" aria-hidden="true">
-                <img src="assets/icons/Icon.svg" alt="" />
-              </div>
-              <div class="adv-card__body">
-                <h3 class="advantages__card-title">
-                  ВЫСОКАЯ ПРОИЗВОДИТЕЛЬНОСТЬ
-                </h3>
-                <p class="advantages__card-text">
-                  Объем стирки белья в сутки до 4.2 тонн.
-                </p>
-              </div>
-            </article>
-
-            <article class="adv-card" id="ht">
-              <div class="adv-card__icon" aria-hidden="true">
-                <img src="assets/icons/Icon3.svg" alt="" />
-              </div>
-              <div class="adv-card__body">
-                <h3 class="advantages__card-title">ТОЧНОСТЬ</h3>
-                <p class="advantages__card-text">
-                  Отлаженная система логистики по забору и доставке белья
-                  клиентам.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROCESS -->
-      <section class="process" id="process">
-        <div class="container process__inner">
-          <h2 class="section-title2 process__title">ПРОЦЕСС РАБОТЫ</h2>
-          <p class="section-subtitle process__subtitle">
-            Все процессы оптимизированы, что бы наши клиенты получали
-            максимальный уровень сервиса.
-          </p>
-
-          <p class="process__hint">4 простых шага к перзупречной чистоте:</p>
-
-          <div class="process__grid">
-            <article class="step-card">
-              <div class="step-card--wrap">
-                <div class="step-card__num">
-                  1
-                  <h3 class="step-card-title">Оставление заявки</h3>
-                </div>
-                <p class="card-text">
-                  Оставьте заявку на сайте или по телефону. Наш менеджер
-                  оперативно свяжется с вами для уточнения деталей.
-                </p>
-              </div>
-            </article>
-
-            <article class="step-card">
-              <div class="step-card--wrap">
-                <div class="step-card__num">
-                  2
-                  <h3 class="step-card-title">Расчет стоимости</h3>
-                </div>
-                <p class="card-text">
-                  Рассчитаем стоимость стирки в зависимости от типа белья,
-                  объема и требуемых услуг. После согласования заключается
-                  договор. Предлагаем прозрачные и выгодные условия.
-                </p>
-              </div>
-            </article>
-
-            <article class="step-card">
-              <div class="step-card--wrap">
-                <div class="step-card__num">
-                  3
-                  <h3 class="step-card-title">Забор белья</h3>
-                </div>
-                <p class="card-text">
-                  Наш курьер приедет в удобное для вас время, чтобы забрать
-                  белье. Мы работаем по Москве и области, гарантируя оперативную
-                  логистику.
-                </p>
-              </div>
-            </article>
-
-            <article class="step-card">
-              <div class="step-card--wrap">
-                <div class="step-card__num wid">
-                  4
-                  <h3 class="step-card-title">Возврат чистого белья</h3>
-                </div>
-                <p class="card-text wid">
-                  После профессиональной стирки и глажки доставим чистый и
-                  свежий текстиль обратно в ваш ресторан, отель или организацию.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="faq" id="faq">
-        <div class="container faq__inner">
-          <h2 class="section-title faq__title">FAQ</h2>
-          <p class="section-subtitle faq__subtitle">
-            Отвечаем на самые частые вопросы наших клиентов
-          </p>
-
-          <div class="accordion faq__list" data-accordion>
-            <div class="accordion__item">
-              <button
-                class="accordion__head"
-                type="button"
-                aria-expanded="false"
-              >
-                <span class="accordion__q"
-                  >Какая гарантия качества ваших услуг?</span
-                >
-                <span class="accordion__btn" aria-hidden="true">+</span>
-              </button>
-              <div class="accordion__body" hidden>
-                <div class="accordion__content">
-                  Мы используем профессиональную химию, современные технологии
-                  обработки и двойной контроль качества. В случае вопросов —
-                  оперативно решаем ситуацию.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion__item">
-              <button
-                class="accordion__head"
-                type="button"
-                aria-expanded="false"
-              >
-                <span class="accordion__q">Каков график работы прачечной?</span>
-                <span class="accordion__btn" aria-hidden="true">+</span>
-              </button>
-              <div class="accordion__body" hidden>
-                <div class="accordion__content">
-                  Прачечная и служба забора/доставки белья работают без
-                  выходных, круглосуточно. Офис с 9:00 до 19:00, будни.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion__item">
-              <button
-                class="accordion__head"
-                type="button"
-                aria-expanded="false"
-              >
-                <span class="accordion__q"
-                  >Вы работаете с физическими и юридическими лицами?</span
-                >
-                <span class="accordion__btn" aria-hidden="true">+</span>
-              </button>
-              <div class="accordion__body" hidden>
-                <div class="accordion__content">
-                  Да, работаем как с физическими, так и с юридическими лицами.
-                  Для организаций возможен договор и индивидуальные условия.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="contact" id="contacts">
-        <div class="container contact__inner">
-          <!-- картинка ВЫЛЕТАЕТ ВЛЕВО за контейнер (если надо вправо — поменяй bleed-left на bleed-right) -->
-          <div class="contact__media media-bleed bleed-left" aria-hidden="true">
-            <img
-              class="media-bleed__img"
-              id="media-bleed__img-w"
-              src="assets/form-left-placeholder.svg"
-              alt=""
-            />
-          </div>
-
-          <div class="contact__content">
-            <h2 class="contact__title">Форма для обратной<br />связи</h2>
-            <p class="section-subtitle contact__subtitle">
-              Оставьте свои данные и мы проконсультируем Вас по всем вопросам
-            </p>
-
-            <form class="form" id="callback-form" novalidate>
-              <label class="form__field">
-                <input
-                  class="form__input"
-                  type="email"
-                  name="email"
-                  placeholder="Почта"
-                  required
-                />
-              </label>
-
-              <label class="form__field">
-                <input
-                  class="form__input"
-                  type="text"
-                  name="name"
-                  placeholder="Имя"
-                  required
-                />
-              </label>
-
-              <label class="form__field">
-                <input
-                  class="form__input"
-                  type="tel"
-                  name="phone"
-                  inputmode="tel"
-                  placeholder="+7 (000) 000 - 00 - 00"
-                  required
-                />
-              </label>
-
-              <button class="btn btn--light form__submit" type="submit">
-                Заказать звонок
-              </button>
-
-              <div class="form__note">
-                Нажимая на кнопку Вы соглашаетесь:
-                <ul class="form__checks">
-                  <li>
-                    С условиями обработки и использования персональных данных.
-                  </li>
-                  <li>Обработку ПД</li>
-                  <li>На получение рекламы</li>
-                </ul>
-              </div>
-
-              <div class="form__status" role="status" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__left">©2025 МастерСтирка</div>
-        <a class="footer__policy" href="#" target="_blank" rel="noopener"
-          >Политика конфиденциальности</a
-        >
-      </div>
-    </footer>
-
-    <!-- MODAL -->
-    <div
-      class="modal"
-      id="modal-callback"
-      aria-hidden="true"
-      role="dialog"
-      aria-modal="true"
-    >
-      <div class="modal__overlay" data-modal-close></div>
-      <div class="modal__panel" role="document">
-        <button
-          class="modal__close"
-          type="button"
-          aria-label="Закрыть"
-          data-modal-close
-        >
-          ×
-        </button>
-
-        <h3 class="modal__title">Заказать стирку</h3>
-        <p class="modal__subtitle">Оставьте контакты — мы перезвоним</p>
-
-        <form class="form form--modal" id="callback-form-modal" novalidate>
-          <label class="form__field">
-            <input
-              class="form__input"
-              type="text"
-              name="name"
-              placeholder="Имя"
-              required
-            />
-          </label>
-
-          <label class="form__field">
-            <input
-              class="form__input"
-              type="tel"
-              name="phone"
-              placeholder="+7 (000) 000 - 00 - 00"
-              required
-            />
-          </label>
-
-          <button class="btn btn--primary form__submit" type="submit">
-            Отправить
-          </button>
-          <div class="form__status" role="status" aria-live="polite"></div>
-        </form>
-      </div>
+      <a class="header__phone" href="tel:+79857389238" aria-label="Позвонить">
+        <span class="header__phone-icon" aria-hidden="true"><img src="./assets/icons/tel.svg" alt="телефон" /></span>
+        <span class="header__phone-text">8 (985) 738-92-38</span>
+      </a>
     </div>
+  </header>
 
-    <script src="js/main.js"></script>
-  </body>
+  <main class="main">
+    <!-- HERO -->
+    <section class="hero" id="services">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Качественная стирка<br />
+            <span class="hero__title-light">для отелей, фитнес-<br />клубов и др</span>
+          </h1>
+
+          <p class="hero__desc">
+            Стирка всех видов белья для производства и организаций
+          </p>
+
+          <button class="btn btn--primary hero__btn" type="button" data-modal-open="callback">Заказать стирку </button>
+            <a class="hero__phone" href="tel:+79857389238" aria-label="Позвонить">
+              <span class="hero__phone-icon" aria-hidden="true"><img src="./assets/icons/tel.svg"
+                  alt="телефон" /></span>
+              <span class="hero__phone-text">8 (985) 738-92-38</span>
+            </a>
+        </div>
+
+        <!-- картинка ВЫЛЕТАЕТ ВПРАВО за контейнер -->
+        <div class="hero__media media-bleed bleed-right" aria-hidden="true">
+          <img class="media-bleed__img" src="./assets/hero-placeholder.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <h2 class="section-title about__title">О НАС</h2>
+
+          <p class="section-subtitle about__lead">
+            Экономьте время — доверьте стирку профессионалам. Мы гарантируем
+            высокое качество, деликатный уход и соблюдение сроков.
+          </p>
+
+          <div class="about__line" aria-hidden="true"></div>
+
+          <div class="about__text">
+            <p>
+              <span class="text-strong">Добро пожаловать в прачечную МастерСтирка</span>
+              — ваш надежный партнер в сфере профессиональной стирки в Москве.
+              Мы предоставляем полный комплекс услуг для гостиниц, общежитий,
+              воинских частей, производственных предприятий, детских и
+              медицинских учреждений, обеспечивая безупречное качество и
+              деликатный уход за текстилем.
+            </p>
+
+            <p class="text-strong">
+              Принимается в стирку столовое и постельное белье, махровые
+              изделия, спецодежда.
+            </p>
+          </div>
+        </div>
+
+        <!-- картинка ВЫЛЕТАЕТ ВПРАВО за контейнер -->
+        <div class="about__media media-bleed bleed-right" aria-hidden="true">
+          <img class="media-bleed__img" src="./assets/about-placeholder.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="prices" id="prices">
+      <div class="container prices__inner">
+        <!-- картинка ВЫЛЕТАЕТ ВЛЕВО за контейнер -->
+        <div class="prices__media media-bleed bleed-left" aria-hidden="true">
+          <img class="media-bleed__img" src="./assets/prices-placeholder.svg" alt="" />
+        </div>
+
+        <div class="prices__content">
+          <h2 class="section-title prices__title">ЦЕНЫ</h2>
+          <div class="prices__subtitle">от 60 ₽ / кг</div>
+
+          <div class="prices__text">
+            <p class="prices__label text-strong">
+              В цену включены следующие услуги:
+            </p>
+            <ul class="prices__list">
+              <li class="prices__item">взвешивание и фасовка белья;</li>
+              <li class="prices__item">стирка белья;</li>
+              <li class="prices__item">сушка белья;</li>
+              <li class="prices__item">глажка и упаковка белья.</li>
+              <li class="prices__item">
+                забор белья в обработку и возврат чистого
+              </li>
+            </ul>
+
+            <p>
+              При этом цены могут быть изменены в зависимости от категории
+              текстиля, его состояния, объема, а также вида заказываемых
+              услуг.
+            </p>
+
+            <p>
+              Прачечная «МастерСтирка» гарантирует сохранность, качество и
+              сроки стирки Вашего белья так как оно будет стираться на новом,
+              современном оборудовании и ответственным профессиональным
+              коллективом
+            </p>
+
+            <p>
+              Свяжитесь с нами прямо сейчас, чтобы обсудить условия
+              сотрудничества. МастерСтирка — ваш эксперт в сфере стирки для
+              бизнеса!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients" id="clients">
+      <div class="container clients__inner">
+        <h2 class="section-title clients__title">НАШИ КЛИЕНТЫ</h2>
+
+        <div class="clients__grid">
+          <article class="client-card">
+            <div class="client-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-hotel1.svg" alt="" />
+            </div>
+            <div class="client-card__body">
+              <h3 class="card-title">Гостиницы и отели</h3>
+              <p class="card-text">
+                Наши клиенты, представляющие гостиницы и отели, знают какие
+                требования должны предъявляться к прачечным, готовы взять на
+                себя обслуживание гостиничных комплексов с большим количеством
+                постельного белья и формы.
+              </p>
+            </div>
+          </article>
+
+          <article class="client-card">
+            <div class="client-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-hotel4.svg" alt="" />
+            </div>
+            <div class="client-card__body">
+              <h3 class="card-title">Фитнес-клубы и бани</h3>
+              <p class="card-text">
+                Для фитнес центров характерно, что основной объем, требующей
+                стирки трикотажа, составляют махровые полотенца и халаты. Они
+                требуют своей технологии стирки, т.к. при ее нарушении эти
+                ткани грубеют.
+              </p>
+            </div>
+          </article>
+
+          <article class="client-card">
+            <div class="client-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-hotel2.svg" alt="" />
+            </div>
+            <div class="client-card__body">
+              <h3 class="card-title">Рестораны</h3>
+              <p class="card-text">
+                Для любого ресторана чистота текстиля в зале — одна из
+                ключевых составляющих его репутации. Специфика использования
+                текстиля в работе такова что загрязнения приводят к быстрому
+                загрязнению, потере респектабельного вида и частой стирке.
+              </p>
+            </div>
+          </article>
+
+          <article class="client-card">
+            <div class="client-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-hotel5.svg" alt="" />
+            </div>
+            <div class="client-card__body">
+              <h3 class="card-title">Медучреждения</h3>
+              <p class="card-text">
+                В медицинских учреждениях, таких как стационары, требуется
+                стирка одежды часто и практически без остановок. Это
+                обусловлено спецификой учреждений. Необходимо стирать
+                постельное белье, полотенца, халаты и т.п.
+              </p>
+            </div>
+          </article>
+
+          <article class="client-card client-card--wide">
+            <div class="client-card__icon" aria-hidden="true">
+              <img src="assets/icons/icon-hotel3.svg" alt="" />
+            </div>
+            <div class="client-card__body">
+              <h3 class="card-title">Производственные и иные организации</h3>
+              <p class="card-text">
+                Процесс взаимодействия со всеми организациями одинаков и
+                начинается он одинаково для всех. После того, как
+                представитель организации свяжется с нашим менеджером
+                (позвонит нам или перезвонит по поступившей заявке на обратный
+                звонок) организации будет направлено индивидуальное
+                коммерческое предложение с указанием цены, рассчитанной с
+                учетом особенностей текстиля, подлежащего стирке, а также
+                набора услуг, выбранных клиентом и согласованных сторонами.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="advantages" id="advantages">
+      <div class="container advantages__inner">
+        <h2 class="section-title2 advantages__title">НАШИ ПРЕИМУЩЕСТВА</h2>
+
+        <div class="advantages__grid">
+          <article class="adv-card">
+            <div class="adv-card__icon" aria-hidden="true">
+              <img src="assets/icons/Icon.svg" alt="" />
+            </div>
+            <div class="adv-card__body">
+              <h3 class="advantages__card-title">ТЕХНОЛОГИЧНОСТЬ</h3>
+              <p class="advantages__card-text">
+                Обеспечивается современным промышленным оборудованием в
+                достаточном количестве, позволяющем не смешивать потоки белья,
+                системой автоматических дозаторов моющих средств и широким
+                набором машинных программ для стирки любых видов трикотажа.
+              </p>
+            </div>
+          </article>
+
+          <article class="adv-card">
+            <div class="adv-card__icon" aria-hidden="true">
+              <img src="assets/icons/Icon2.svg" alt="" />
+            </div>
+            <div class="adv-card__body">
+              <h3 class="advantages__card-title">КАЧЕСТВО</h3>
+              <p class="advantages__card-text">
+                Достигается современным оборудованием и квалифицированным
+                персоналом, а также применением двойного контроля качества в
+                процессе работы с текстилем.
+              </p>
+            </div>
+          </article>
+
+          <article class="adv-card" id="ht">
+            <div class="adv-card__icon" aria-hidden="true">
+              <img src="assets/icons/Icon.svg" alt="" />
+            </div>
+            <div class="adv-card__body">
+              <h3 class="advantages__card-title">
+                ВЫСОКАЯ ПРОИЗВОДИТЕЛЬНОСТЬ
+              </h3>
+              <p class="advantages__card-text">
+                Объем стирки белья в сутки до 4.2 тонн.
+              </p>
+            </div>
+          </article>
+
+          <article class="adv-card" id="ht">
+            <div class="adv-card__icon" aria-hidden="true">
+              <img src="assets/icons/Icon3.svg" alt="" />
+            </div>
+            <div class="adv-card__body">
+              <h3 class="advantages__card-title">ТОЧНОСТЬ</h3>
+              <p class="advantages__card-text">
+                Отлаженная система логистики по забору и доставке белья
+                клиентам.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="process" id="process">
+      <div class="container process__inner">
+        <h2 class="section-title2 process__title">ПРОЦЕСС РАБОТЫ</h2>
+        <p class="section-subtitle process__subtitle">
+          Все процессы оптимизированы, что бы наши клиенты получали
+          максимальный уровень сервиса.
+        </p>
+
+        <p class="process__hint">4 простых шага к перзупречной чистоте:</p>
+
+        <div class="process__grid">
+          <article class="step-card">
+            <div class="step-card--wrap">
+              <div class="step-card__num">
+                1
+                <h3 class="step-card-title">Оставление заявки</h3>
+              </div>
+              <p class="card-text">
+                Оставьте заявку на сайте или по телефону. Наш менеджер
+                оперативно свяжется с вами для уточнения деталей.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card--wrap">
+              <div class="step-card__num">
+                2
+                <h3 class="step-card-title">Расчет стоимости</h3>
+              </div>
+              <p class="card-text">
+                Рассчитаем стоимость стирки в зависимости от типа белья,
+                объема и требуемых услуг. После согласования заключается
+                договор. Предлагаем прозрачные и выгодные условия.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card--wrap">
+              <div class="step-card__num">
+                3
+                <h3 class="step-card-title">Забор белья</h3>
+              </div>
+              <p class="card-text">
+                Наш курьер приедет в удобное для вас время, чтобы забрать
+                белье. Мы работаем по Москве и области, гарантируя оперативную
+                логистику.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card--wrap">
+              <div class="step-card__num wid">
+                4
+                <h3 class="step-card-title">Возврат чистого белья</h3>
+              </div>
+              <p class="card-text wid">
+                После профессиональной стирки и глажки доставим чистый и
+                свежий текстиль обратно в ваш ресторан, отель или организацию.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="container faq__inner">
+        <h2 class="section-title faq__title">FAQ</h2>
+        <p class="section-subtitle faq__subtitle">
+          Отвечаем на самые частые вопросы наших клиентов
+        </p>
+
+        <div class="accordion faq__list" data-accordion>
+          <div class="accordion__item">
+            <button class="accordion__head" type="button" aria-expanded="false">
+              <span class="accordion__q">Какая гарантия качества ваших услуг?</span>
+              <span class="accordion__btn" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__body" hidden>
+              <div class="accordion__content">
+                Мы используем профессиональную химию, современные технологии
+                обработки и двойной контроль качества. В случае вопросов —
+                оперативно решаем ситуацию.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__head" type="button" aria-expanded="false">
+              <span class="accordion__q">Каков график работы прачечной?</span>
+              <span class="accordion__btn" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__body" hidden>
+              <div class="accordion__content">
+                Прачечная и служба забора/доставки белья работают без
+                выходных, круглосуточно. Офис с 9:00 до 19:00, будни.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__head" type="button" aria-expanded="false">
+              <span class="accordion__q">Вы работаете с физическими и юридическими лицами?</span>
+              <span class="accordion__btn" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__body" hidden>
+              <div class="accordion__content">
+                Да, работаем как с физическими, так и с юридическими лицами.
+                Для организаций возможен договор и индивидуальные условия.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contacts">
+      <div class="container contact__inner">
+        <!-- картинка ВЫЛЕТАЕТ ВЛЕВО за контейнер (если надо вправо — поменяй bleed-left на bleed-right) -->
+        <div class="contact__media media-bleed bleed-left" aria-hidden="true">
+          <img class="media-bleed__img" id="media-bleed__img-w" src="assets/form-left-placeholder.svg" alt="" />
+        </div>
+
+        <div class="contact__content">
+          <h2 class="contact__title">Форма для обратной<br />связи</h2>
+          <p class="section-subtitle contact__subtitle">
+            Оставьте свои данные и мы проконсультируем Вас по всем вопросам
+          </p>
+
+          <form class="form" id="callback-form" novalidate>
+            <label class="form__field">
+              <input class="form__input" type="email" name="email" placeholder="Почта" required />
+            </label>
+
+            <label class="form__field">
+              <input class="form__input" type="text" name="name" placeholder="Имя" required />
+            </label>
+
+            <label class="form__field">
+              <input class="form__input" type="tel" name="phone" inputmode="tel" placeholder="+7 (000) 000 - 00 - 00"
+                required />
+            </label>
+
+            <button class="btn btn--light form__submit" type="submit">
+              Заказать звонок
+            </button>
+            
+            <div class="form__status" role="status" aria-live="polite"></div>
+
+            <div class="form__note">
+              Нажимая на кнопку Вы соглашаетесь:
+              <ul class="form__checks">
+                <li>
+                  С условиями обработки и использования персональных данных.
+                </li>
+                <li>Обработку ПД</li>
+                <li>На получение рекламы</li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+      <div class="mobile-menu__head">
+        <span class="mobile-menu__title">Меню</span>
+        <button class="mobile-menu__close" type="button" aria-label="Закрыть меню" data-mobile-menu-close>×</button>
+      </div>
+
+      <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+        <a class="mobile-menu__link" href="#about" data-mobile-menu-link>О нас</a>
+        <a class="mobile-menu__link" href="#services" data-mobile-menu-link>Услуги</a>
+        <a class="mobile-menu__link" href="#process" data-mobile-menu-link>Процесс</a>
+        <a class="mobile-menu__link" href="#contacts" data-mobile-menu-link>Контакты</a>
+      </nav>
+
+      <a class="mobile-menu__phone" href="tel:+79857389238">
+        <span class="mobile-menu__phone-icon" aria-hidden="true"><img src="./assets/icons/tel.svg"
+            alt="телефон" /></span>
+        <span class="mobile-menu__phone-text">8 (985) 738-92-38</span>
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">©2025 МастерСтирка</div>
+      <a class="footer__policy" href="#" target="_blank" rel="noopener">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal-callback" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+        ×
+      </button>
+
+      <h3 class="modal__title">Заказать стирку</h3>
+      <p class="modal__subtitle">Оставьте контакты — мы перезвоним</p>
+
+      <form class="form form--modal" id="callback-form-modal" novalidate>
+        <label class="form__field">
+          <input class="form__input" type="text" name="name" placeholder="Имя" required />
+        </label>
+
+        <label class="form__field">
+          <input class="form__input" type="tel" name="phone" placeholder="+7 (000) 000 - 00 - 00" required />
+        </label>
+
+        <button class="btn btn--primary form__submit" type="submit">
+          Отправить
+        </button>
+        <div class="form__status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

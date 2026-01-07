@@ -28,16 +28,33 @@ document.addEventListener("click", (e) => {
 
     const isOpen = head.getAttribute("aria-expanded") === "true";
 
-    // close all
-    root.querySelectorAll(".accordion__head").forEach((h) => h.setAttribute("aria-expanded", "false"));
-    root.querySelectorAll(".accordion__body").forEach((b) => (b.hidden = true));
-    root.querySelectorAll(".accordion__btn").forEach((b) => (b.textContent = "+"));
-
-    if (!isOpen) {
+    // Если текущий элемент уже открыт - закрываем его
+    if (isOpen) {
+      head.setAttribute("aria-expanded", "false");
+      body.hidden = true;
+      btn.textContent = "+";
+    } else {
+      // Закрываем все остальные
+      root.querySelectorAll(".accordion__head").forEach((h) => {
+        h.setAttribute("aria-expanded", "false");
+      });
+      root.querySelectorAll(".accordion__body").forEach((b) => {
+        b.hidden = true;
+      });
+      root.querySelectorAll(".accordion__btn").forEach((b) => {
+        b.textContent = "+";
+      });
+      
+      // Открываем текущий
       head.setAttribute("aria-expanded", "true");
       body.hidden = false;
       btn.textContent = "×";
     }
+  });
+  
+  // Инициализация начального состояния
+  root.querySelectorAll(".accordion__head").forEach(head => {
+    head.setAttribute("aria-expanded", "false");
   });
 })();
 
@@ -113,3 +130,82 @@ function handleForm(form) {
   });
 }
 document.querySelectorAll("form").forEach(handleForm);
+
+
+// Mobile menu (burger)
+(function initMobileMenu() {
+  const burger = document.querySelector(".header__burger");
+  const menu = document.getElementById("mobile-menu");
+  if (!burger || !menu) return;
+
+  const open = () => {
+    menu.classList.add("is-open");
+    menu.setAttribute("aria-hidden", "false");
+    burger.classList.add("is-active");
+    burger.setAttribute("aria-expanded", "true");
+    document.documentElement.style.overflow = "hidden";
+  };
+
+  const close = () => {
+    menu.classList.remove("is-open");
+    menu.setAttribute("aria-hidden", "true");
+    burger.classList.remove("is-active");
+    burger.setAttribute("aria-expanded", "false");
+    document.documentElement.style.overflow = "";
+  };
+
+  burger.addEventListener("click", () => {
+    const isOpen = menu.classList.contains("is-open");
+    isOpen ? close() : open();
+  });
+
+  menu.addEventListener("click", (e) => {
+    if (e.target.closest("[data-mobile-menu-close]")) close();
+    if (e.target.closest("[data-mobile-menu-link]")) close();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && menu.classList.contains("is-open")) close();
+  });
+
+  // Оптимизация загрузки изображений
+document.addEventListener('DOMContentLoaded', function() {
+  // Ленивая загрузка изображений
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+  
+  if ('loading' in HTMLImageElement.prototype) {
+    // Браузер поддерживает native lazy loading
+    lazyImages.forEach(img => {
+      img.classList.add('loaded');
+    });
+  } else {
+    // Fallback для старых браузеров
+    const lazyImageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('loaded');
+          lazyImageObserver.unobserve(img);
+        }
+      });
+    });
+
+    lazyImages.forEach(img => {
+      lazyImageObserver.observe(img);
+    });
+  }
+  
+  // Предзагрузка критических ресурсов
+  const preloadLinks = [
+    { rel: 'preload', href: 'css/style.css', as: 'style' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com' }
+  ];
+  
+  preloadLinks.forEach(link => {
+    const el = document.createElement('link');
+    Object.assign(el, link);
+    document.head.appendChild(el);
+  });
+});
+})();
