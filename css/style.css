@@ -1285,7 +1285,7 @@ input {
     width: 60px;
     height: 60px;
     flex-basis: 60px;
-    font-size: 59px;
+    font-size: 52px;
     border-radius: 12px;
   }
   .accordion__item .accordion__head[aria-expanded="true"] .accordion__btn,
@@ -1335,6 +1335,8 @@ input {
     height: 54px;
     border-radius: 18px;
     font-size: 18px;
+    display: block;
+    margin: 0 auto;
     margin-top: 6px;
   }
 
