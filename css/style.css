@@ -1580,6 +1580,8 @@ margin-left: calc((100vw - var(--container)) / -1.8);
   .btn-mob {
     display: block;
     width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
   }
   .btn-mob1 {
     display: none;
