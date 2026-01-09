@@ -103,17 +103,11 @@
     <header class="header" id="top">
       <div class="container header__inner">
         <a class="header__brand" href="#" aria-label="На главную">
-          <span class="header__logo" aria-hidden="true">
             <img
               class="header__logo-img"
               src="./assets/icons/logo.svg"
               alt=""
             />
-          </span>
-          <span class="header__brand-text">
-            <span class="header__brand-title">МАСТЕР</span>
-            <span class="header__brand-title">СТИРКА</span>
-          </span>
         </a>
 
         <nav class="header__nav" aria-label="Навигация">
@@ -156,8 +150,8 @@
             <p class="hero__desc">
               Стирка всех видов белья для производства и организаций
             </p>
-
-            <button
+            <div class="btn-mob1">
+              <button
               class="btn btn--primary hero__btn"
               type="button"
               data-modal-open="callback"
@@ -174,6 +168,8 @@
               /></span>
               <span class="hero__phone-text">8 (985) 738-92-38</span>
             </a>
+
+            </div>
           </div>
           <div class="hero__media media-bleed bleed-right" aria-hidden="true">
             <img
@@ -181,6 +177,25 @@
               src="./assets/hero-placeholder.svg"
               alt=""
             />
+          </div>
+          <div class="btn-mob">
+                        <button
+              class="btn btn--primary hero__btn"
+              type="button"
+              data-modal-open="callback"
+            >
+              Заказать стирку
+            </button>
+            <a
+              class="hero__phone"
+              href="tel:+79857389238"
+              aria-label="Позвонить"
+            >
+              <span class="hero__phone-icon" aria-hidden="true"
+                ><img src="./assets/icons/tel.svg" alt="телефон"
+              /></span>
+              <span class="hero__phone-text">8 (985) 738-92-38</span>
+            </a>
           </div>
         </div>
       </section>
@@ -201,15 +216,15 @@
                 <span class="text-strong"
                   >Добро пожаловать в прачечную МастерСтирка</span
                 >
-                — ваш надежный партнер в сфере профессиональной стирки в Москве.
-                Мы предоставляем полный комплекс услуг для гостиниц, общежитий,
-                воинских частей, производственных предприятий, детских и
-                медицинских учреждений, обеспечивая безупречное качество и
+                — ваш<br> надежный партнер в сфере профессиональной стирки в<br> Москве.
+                Мы предоставляем полный комплекс услуг для<br> отелей, общежитий,
+                воинских частей, производственных<br> предприятий, детских и
+                медицинских учреждений,<br> гарантируя безупречное качество и<br>
                 деликатный уход за текстилем.
               </p>
 
               <p class="text-strong">
-                Принимается в стирку столовое и постельное белье, махровые
+                Принимается в стирку столовое и постельное белье,<br> махровые
                 изделия, спецодежда.
               </p>
             </div>
@@ -225,7 +240,7 @@
       </section>
       <section class="prices" id="prices">
         <div class="container prices__inner">
-          <div class="prices__media media-bleed bleed-left" aria-hidden="true">
+          <div class="prices__media media-bleed bleed-left" aria-hidden="true" id="media-bleed__img-size">
             <img
               class="media-bleed__img"
               src="./assets/prices-placeholder.svg"
@@ -251,7 +266,7 @@
                 </li>
               </ul>
 
-              <p>
+              <p class="prices__label-pad">
                 При этом цены могут быть изменены в зависимости от категории
                 текстиля, его состояния, объема, а также вида заказываемых
                 услуг.
@@ -261,10 +276,7 @@
                 Прачечная «МастерСтирка» гарантирует сохранность, качество и
                 сроки стирки Вашего белья так как оно будет стираться на новом,
                 современном оборудовании и ответственным профессиональным
-                коллективом
-              </p>
-
-              <p>
+                коллективом <br>
                 Свяжитесь с нами прямо сейчас, чтобы обсудить условия
                 сотрудничества. МастерСтирка — ваш эксперт в сфере стирки для
                 бизнеса!
@@ -430,7 +442,7 @@
             максимальный уровень сервиса.
           </p>
 
-          <p class="process__hint">4 простых шага к перзупречной чистоте:</p>
+          <p class="process__hint">4 простых шага к презупречной чистоте:</p>
 
           <div class="process__grid">
             <article class="step-card">
@@ -557,10 +569,9 @@
       </section>
       <section class="contact" id="contacts">
         <div class="container contact__inner">
-          <div class="contact__media media-bleed bleed-left" aria-hidden="true">
+          <div class="contact__media media-bleed bleed-left" aria-hidden="true" id="media-bleed__img-w">
             <img
-              class="media-bleed__img"
-              id="media-bleed__img-w"
+              class="media-bleed__img media-bleed__img-s"
               src="assets/form-left-placeholder.svg"
               alt=""
             />
